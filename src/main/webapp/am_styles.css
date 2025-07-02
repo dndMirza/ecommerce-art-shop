@@ -1,0 +1,331 @@
+/* Main styles for Art Gallery Shop - by AM */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.am_container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 80vh;
+}
+
+/* Header */
+.am_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.am_logo h1 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.am_navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.am_navigation li {
+    margin-left: 20px;
+}
+
+.am_navigation a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.am_navigation a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Product listing */
+.am_products_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.am_products_table th {
+    background-color: #f2f2f2;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.am_products_table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.am_products_table img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.am_products_table img:hover {
+    transform: scale(1.05);
+}
+
+.am_price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Product detail view */
+.am_product_view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.am_product_view h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.am_product_image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.am_product_info {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.am_product_description {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.am_product_price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 20px 0;
+}
+
+.am_button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.am_button:hover {
+    background-color: #2980b9;
+}
+
+.am_button.primary {
+    background-color: #2ecc71;
+}
+
+.am_button.primary:hover {
+    background-color: #27ae60;
+}
+
+.am_button.danger {
+    background-color: #e74c3c;
+}
+
+.am_button.danger:hover {
+    background-color: #c0392b;
+}
+
+/* Basket */
+.am_basket_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.am_basket_table th {
+    background-color: #f2f2f2;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.am_basket_table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.am_basket_table .am_thumbnail {
+    width: 80px;
+    height: auto;
+    border-radius: 3px;
+}
+
+.am_quantity_input {
+    width: 60px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.am_total_row {
+    font-weight: bold;
+    background-color: #f9f9f9;
+    font-size: 1.1em;
+}
+
+.am_total_row td {
+    padding: 15px 12px;
+}
+
+/* Order confirmation */
+.am_confirmation {
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    max-width: 600px;
+}
+
+.am_confirmation h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.am_name_input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.am_empty_message {
+    text-align: center;
+    padding: 30px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.am_error_message {
+    text-align: center;
+    padding: 20px;
+    color: #e74c3c;
+    background-color: #fadbd8;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.am_action_buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Search pages */
+.am_search_section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.am_search_section h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.am_search_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.am_search_input {
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.am_search_hint {
+    color: #7f8c8d;
+    margin: -10px 0 10px;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.am_search_results_header {
+    background-color: #eaf2f8;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .am_header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .am_navigation ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .am_navigation li {
+        margin: 0 10px;
+    }
+
+    .am_product_view {
+        padding: 10px;
+    }
+}
